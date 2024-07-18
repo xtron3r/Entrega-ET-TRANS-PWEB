@@ -1,0 +1,96 @@
+.body {
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+}
+.fondo{
+    background-image: url(../img/medicina_humana.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+}
+.lbl_rut {
+    color: #018E97;
+}
+
+.parra {
+    font-size: 30px;
+    color: #018E97;
+    width: 800px;
+}
+
+#tableBody{
+    font-size: 20px;
+}
+
+
+.fond {
+    background-size: cover;
+    font-size: 40px;
+    margin-left: 5%;
+    margin-right: 10%;
+}
+
+.form-control {
+    border-color: black;
+    width: 55%;
+}
+.input-group-text .bi-search {
+    font-size: 1.5rem;
+  }
+
+.table {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    font-size: 0.9rem; 
+    margin-bottom: 0;
+  }
+
+.table th {
+    background-color: #018E97;
+    color: #fff;
+    font-size: 1rem;
+  }
+.table td {
+    font-size: 0.9rem;
+  }
+.btn {
+    padding: 8px 20px 10px;
+    border: #018E97;
+    background-color: #018E97;
+    color: #FFFFFF;
+}
+
+.error {
+    color: #018E97;
+    font-size: 14px;
+    margin-top: 10px;
+  }
+.btn:hover {
+    background-color: yellow;
+    color: black;
+    border-color: black;
+}
+
+.btn-anular {
+    font-size: 20px;
+    padding: 8px 20px 10px;
+    background-color: red;
+    color: black;
+    border-radius: 10px;
+
+}
+.btn-anular:hover{
+    background-color: yellow;
+}
+
+
+/*FOOTER */
+.fooc .colfoter {
+    background-color: #018E97;
+    color: white;
+}
+
+.txtfo{
+    color: rgb(246, 230, 230);
+}

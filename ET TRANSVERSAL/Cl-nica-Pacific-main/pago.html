@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pago Pacifico</title>
+    <!-- ICONS -->
+    <link rel="shortcut icon" href="img/logore.ico" type="image/x-icon">
+    <!-- GOOGLE FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- BOOTSTRAP-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- CSS-->
+    <link rel="stylesheet" href="css/pago.css">
+    <!-- JQUERY-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- JAVASCRIPT-->
+    <script src="js/pago.js"></script>
+</head>
+<body>
+    <!-- ENCABEZADO DE PAGINA -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html"><img src="img/logoC.png" width="250px" alt="Logo Clínica Pacífico"></a>
+        </div>
+    </nav>
+
+    <main class="container-fluid mt-5 mb-5">
+        <div class="row align-items-center">
+            <div class="col-md-5 ">
+                <div class="card w-50 mx-auto ">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Resumen de la Consulta</h5>
+                        <hr>
+                        <p class="card-text fs-4">Precio de la consulta: <strong>$30.000 </strong></p>
+                    </div>
+                </div>
+                <h3 class="text-center mt-5">Metodos de pago</h3>
+                <div class="card-images d-flex justify-content-center mt-4 mb-5">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a4/Mastercard_2019_logo.svg" alt="MasterCard" width="50">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Visa_Inc._logo.svg" alt="Visa" width="50">
+                </div>
+            </div>
+            <div class="col-md-7 back p-5">
+                <h2 class="text-center">Formulario de Pago</h2>
+                <form>
+                    <div class="row mt-3">
+                        <label for="cardNumber" class="form-label">Número de Tarjeta:</label>
+                        <input type="text" class="form-control" id="cardNumber" name="cardNumber" placeholder="Ingrese el número de tarjeta" required pattern="[0-9]{16}" maxlength="16">
+                        <div class="invalid-feedback">El número de tarjeta es inválido. Debe contener 16 dígitos numéricos.</div>
+                    </div>
+                    <div class="mb-6 mt-3">
+                        <label for="expirationMonth" class="form-label">Fecha de Vencimiento:</label>
+                        <div class="row">
+                            <div class="col">
+                                <select class="form-select" id="expirationMonth" name="expirationMonth" required>
+                                    <option value="">Mes</option>
+                                    <option value="01">01</option>
+                                    <option value="02">02</option>
+                                    <option value="03">03</option>
+                                    <option value="04">04</option>
+                                    <option value="05">05</option>
+                                    <option value="06">06</option>
+                                    <option value="07">07</option>
+                                    <option value="08">08</option>
+                                    <option value="09">09</option>
+                                    <option value="10">10</option>
+                                    <option value="11">11</option>
+                                    <option value="12">12</option>
+                                </select>
+                            </div>
+                            <div class="col">
+                                <select class="form-select" id="expirationYear" name="expirationYear" required>
+                                    <option value="">Año</option>
+                                    <option value="2024">2024</option>
+                                    <option value="2025">2025</option>
+                                    <option value="2026">2026</option>
+                                    <option value="2027">2027</option>
+                                    <option value="2028">2028</option>
+                                    <option value="2029">2029</option>
+                                    <option value="2030">2030</option>
+                                    <option value="2031">2031</option>
+                                    <option value="2032">2032</option>
+                                    <option value="2033">2033</option>
+                                    <option value="2034">2034</option>
+                                    <option value="2035">2035</option>
+                                    <option value="2036">2036</option>
+                                    <option value="2037">2037</option>
+                                    <option value="2038">2038</option>
+                                    <option value="2039">2039</option>
+                                    <option value="2040">2040</option>
+                                </select>
+                                <div class="invalid-feedback">Por favor seleccione un año válido.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mb-3 mt-3">
+                        <label for="cvv" class="form-label">CVV:</label>
+                        <input type="text" class="form-control" id="cvv" name="cvv" placeholder="Ingrese el CVV" required pattern="[0-9]{3}" maxlength="3">
+                        <div class="invalid-feedback">El CVV es inválido. Debe contener 3 dígitos numéricos.</div>
+                    </div>
+                    <div class="mb-3 mt-3">
+                        <label for="cardHolderName" class="form-label">Nombre del Titular:</label>
+                        <input type="text" class="form-control" id="cardHolderName" name="cardHolderName" placeholder="Ingrese el nombre del titular" required>
+                        <div class="invalid-feedback">El nombre del titular es requerido.</div>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-back d-block mx-auto">Pagar</button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer class="fooc mt-5">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-4 col-sm-12 colfoter p-5">
+                    <h3>Enlaces</h3>
+                    <ul>                   <!-- que no se te olvide el ul es lista desordenbada-->
+                        <li><a class="txtfo" href="index.html">Inicio</a></li>
+                        <li><a class="txtfo"  href="index.html">¿Quienes somos?</a></li>  <!-- li es elemento de lista-->
+                        <li><a class="txtfo" href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div> 
+                <div class="col-md-4 col-sm-12 colfoter p-5">
+                    <h3>Contacto</h3>
+                    <p>Correo electronico: ClinicaPa@pacifico.cl</p>
+                    <p>Telefono: 5566778899</p>
+                </div>
+                <div class="col-md-4 col-sm-12 colfoter p-5">
+                    <h3>Derechos de autor</h3>
+                    <p>Copyright ©℗®™ 2024 Sitio Web <br> Daryen </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

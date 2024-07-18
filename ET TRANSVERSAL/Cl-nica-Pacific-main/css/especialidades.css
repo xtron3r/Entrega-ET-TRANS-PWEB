@@ -1,0 +1,42 @@
+body{
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+}
+.img-nav{
+    background-image: url(../img/bgClinicaMedica.jpg);
+    background-position: center;
+    background-size: cover;
+    padding: 150px;
+    width: 100%;
+}
+.slogan p{
+    font-size: 30px;
+}
+.card-body,.card-footer{
+    background-color:#018E97;
+}
+.btn{
+    background-color: white;
+    color: black;
+    border-color: black;
+}
+.btn:hover{
+    background-color:rgb(151, 148, 148);
+    color: white;
+    border-color: black;
+}
+
+.txt-white{
+    color:white;
+}
+
+/* footer*/
+
+.fooc .colfoter {
+    background-color: #018E97;
+    color: white;
+}
+
+.txtfo{
+    color: white;
+}

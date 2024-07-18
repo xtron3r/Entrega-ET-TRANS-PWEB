@@ -1,0 +1,47 @@
+body{
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+    background-color: #018E97;
+}
+
+/* CSS HEADER Y PAGINA PRINCILPA*/
+.txt-nav{
+    text-decoration: none;
+    color: black;
+    margin: auto;   
+}
+.txt-nav:hover{
+    color:#018E97
+}
+.fondoimg{
+    background-image: url(../img/Medicina-.jpg);
+    background-position: center;
+    background-size: cover;
+    padding: 150px;
+    width: 100%;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+
+/* MAIN*/
+
+.color-lbl{
+    color: #018E97;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+
+
+/*FOOTER PIE DE PAFINA*/
+
+
+.fooc .colfoter {
+    background-color: #018E97;
+    color: white;
+}
+
+.txtfo{
+    color: white;
+}

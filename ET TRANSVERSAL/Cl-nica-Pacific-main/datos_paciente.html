@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pacifico Pacientes</title>
+    <!-- ICONS -->
+    <link rel="shortcut icon" href="img/logore.ico" type="image/x-icon">
+    <!-- GOOGLE FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- BOOTSTRAP-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- CSS-->
+    <link rel="stylesheet" href="css/datospac.css">
+    <!-- BOOTSTRAP JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+     <!-- JQUERY-->
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+     <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.min.js"></script> <!-- Validate -->
+    <!-- JAVASCRIPT -->
+    <script src="js/datospac.js"></script>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light p-4">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="img/logoC.png" width="250px" alt=""></a>
+            <button class="navbar-toggler" style="background-color: #018E97;" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item me-5">
+                        <a class="nav-link active fw-bold" aria-current="page" href="index.html">INICIO</a>
+                    </li>
+                    <li class="nav-item me-5">
+                        <a class="nav-link active fw-bold" href="especialidades.html">ESPECIALIDADES</a>
+                    </li>
+                    <li class="nav-item me-5">
+                        <a class="nav-link active fw-bold" href="quienes_somos.html">¿QUIENES SOMOS?</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active fw-bold" href="quienes_somos.html">CONTACTO</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container">
+      <section class="fondo mt-4">
+          <div class="row justify-content-center">
+              <div class="col-12 col-md-6">
+                  <div class="bg-white p-5 p-md-5 m-md-4">
+                      <form action="formulario" class="w-100">
+                          <div class="mb-3">
+                              <label for="rut" class="form-label color-lbl">RUT</label>
+                              <input type="text" class="form-control" id="rutinput" aria-describedby="ruthelp" required>
+                              <div id="rutError" class="error-message"></div>
+                              <div id="ruthelp" class="form-text fw-bold">EJ: 12.123.421-K</div>
+                          </div>
+                          <div class="mb-3">
+                              <label for="nombre" class="form-label color-lbl">NOMBRE COMPLETO</label>
+                              <input type="text" class="form-control" id="nombrecom" aria-describedby="nomhelp" required>
+                              <div id="nombreError" class="error-message"></div> 
+                              <div id="nomhelp" class="form-text fw-bold">INGRESE NOMBRE COMPLETO DEL PACIENTE</div>
+                          </div>
+                          <div class="mb-3">
+                              <label for="" class="form-label color-lbl">PREVISIÓN</label>
+                              <select class="form-select" id="prevision" aria-label="Default select example" required>
+                                <option selected>Seleccione su prevision</option>
+                                <option value="FONASA">Fonasa</option>
+                                <option value="ISAPRE">Isapre</option>
+                                <option value="PARTICULAR">No tengo prevision</option>
+                              </select>
+                              <div id="previsionError" class="error-message"></div> 
+                              <div id="previhelp" class="form-text fw-bold">INGRESE PREVISIÓN</div>
+                          </div>
+                          <div class="mb-3">
+                              <button type="button" id="aceptarBtn" class="btn btn-danger fw-bold" style="background-color: #018E97; border-color: #018E97; font-size: 18px;" disabled>ACEPTAR</button>
+                          </div>
+                          <div class="mb-3">
+                              <a href="anular_hora.html"><button type="button" class="btn btn-danger fw-bold" style="font-size: 18px;">ANULAR HORA</button></a>
+                          </div>
+                      </form>
+                  </div>
+              </div>
+          </div>
+      </section>
+  </main>
+
+    <footer class="fooc bg-light">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-4 col-sm-12 colfoter p-5">
+                    <h3>Enlaces</h3>
+                    <ul>
+                        <li><a class="txtfo " href="index.html">Inicio</a></li>
+                        <li><a class="txtfo" href="index.html">¿Quienes somos?</a></li>
+                        <li><a class="txtfo" href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 col-sm-12 colfoter p-5">
+                    <h3>Contacto</h3>
+                    <p>Correo electronico: ClinicaPa@pacifico.cl</p>
+                    <p>Telefono: 5566778899</p>
+                </div>
+                <div class="col-md-4 col-sm-12 colfoter p-5">
+                    <h3>Derechos de autor</h3>
+                    <p>Copyright ©℗®™ 2024 Sitio Web <br> Esteban </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
+
+
+
+
+

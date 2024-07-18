@@ -1,0 +1,49 @@
+body{
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+
+.fondo:hover{
+    background-color: #018E97;
+    border-radius: 10px;
+}
+
+.background-f{
+    background-image: url(../img/background-f.jpg);
+    background-position: center;
+    background-size: cover; /*ajusta el tamaño de la imagen al cuadrado*/
+    height: 100vh;
+}
+
+.form-rut{
+    width: 20rem;
+}
+
+.btn-buscar{
+    background-color: #018E97;
+    border-color: #018E97;
+}
+
+.btn-buscar:hover{
+    background-color: #025157;
+    border-color: #025157;
+}
+
+.back{
+    background-color: #018E97;
+    padding: 10px;
+}
+
+.btn-dark{
+    background-color: white;
+    color: #018E97;
+}
+
+.btn-danger{
+    background-color: rgb(145, 2, 2);
+}
+.btn-danger:hover{
+    background-color: rgb(90, 2, 2);
+}
+

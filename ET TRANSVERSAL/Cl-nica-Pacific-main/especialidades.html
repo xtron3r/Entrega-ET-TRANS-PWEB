@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Especialidades</title>
+    <!-- ICONS -->
+    <link rel="shortcut icon" href="img/logore.ico" type="image/x-icon">
+     <!-- GOOGLE FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+     <!-- BOOTSTRAP-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- CSS-->
+    <link rel="stylesheet" href="css/especialidades.css">
+    <!--JAVASCRIPT-->
+    <script src="js/especialidades.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="img/logoC.png" width="250px" alt=""></a>
+        <button class="navbar-toggler" style="background-color: #018E97;" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto gap-md-2 gap-sm-2 gap-lg-5">
+            <li class="nav-item">
+              <a class="nav-link active fw-bold" aria-current="page" href="index.html">INICIO</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active fw-bold" href="especialidades.html">ESPECIALIDADES</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active fw-bold" href="quienes_somos.html">¿QUIENES SOMOS?</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active fw-bold" href="contacto.html">CONTACTO</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main class="container-fluid">
+        <div class="img-nav d-none d-sm-block">
+            <div class="slogan img-fluid">
+                <p>"En Clínica Pacífico,<br> cuidamos de ti con calma y <br> precisión, para un futuro más saludable."</p><br>
+            </div>
+        </div>
+
+        <div class="card-body d-block d-md-none text-center w-75 mx-auto mt-4">
+          <div class="card-text fw-bold p-4 text-white fs-4">            <!-- SE MUESTRA SOLO CUANDO EL DISPOSITIVO ES SM -->
+              <p>"En Clínica Pacífico,<br> cuidamos de ti con calma y <br> precisión, para un futuro más saludable."</p>
+          </div>
+        </div>
+        
+        <section class="mt-5 mx-auto">
+              <div class="row mb-5">
+                <div class="col-md-6 col-sm-6 mb-3 d-flex justify-content-center align-content-center">
+                  <div class="card text-center w-75">
+                    <div class="card-body">
+                      <img src="img/telemedicina.ico" class="img-fluid" alt="">
+                      <h5 class="card-title fw-bold">TELEMEDICINA</h5>
+                      <p class ="txt-white">Consultas online, diagnósticos y tratamientos virtuales, sin visitas presenciales, usando medios electrónicos, innovando la atención médica.</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="datos_paciente.html"><button class="btn btn-primary " type="button" onclick="reservarEspecialidad('Telemedicina')">RESERVAR</button></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-sm-6 mb-3 d-flex justify-content-center align-content-center">
+                  <div class="card text-center w-75">
+                    <div class="card-body">
+                        <img src="img/medicina-gen.png" class="img-fluid" alt="">
+                      <h5 class="card-title fw-bold">MEDICINA GENERAL</h5>
+                      <p class ="txt-white">Atención integral a pacientes de todas las edades, cubriendo diagnósticos, tratamientos, salud preventiva y derivaciones a especialistas.</p>
+                    </div>
+                    <div class="card-footer">
+                      <a href="datos_paciente.html"><button class="btn btn-primary" type="button" onclick="reservarEspecialidad('Medicina General')">RESERVAR</button></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row mb-5">
+                <div class="col-md-6 col-sm-6 mb-3 d-flex justify-content-center align-content-center">
+                  <div class="card text-center w-75">
+                    <div class="card-body">
+                        <img src="img/mamografia.png" class="img-fluid" alt="">
+                      <h5 class="card-title fw-bold">MAMOGRAFIA</h5>
+                      <p class ="txt-white"> Examen radiológico para detectar tempranamente anomalías en el tejido mamario, especialmente útil en la detección precoz del cáncer de mama.</p>
+                    </div>
+                    <div class="card-footer">
+                      <a href="datos_paciente.html"><button class="btn btn-primary" type="button" onclick="reservarEspecialidad('Mamografia')">RESERVAR</button></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-sm-6 mb-3 d-flex justify-content-center align-content-center">
+                  <div class="card text-center w-75">
+                    <div class="card-body">
+                        <img src="img/odonto.png" class="img-fluid" alt="">
+                      <h5 class="card-title fw-bold">ODONTOLOGIA</h5>
+                      <p class ="txt-white">Especialidad médica enfocada en la salud bucal, abarcando desde limpiezas dentales hasta tratamientos de conducto y extracciones.</p>
+                    </div>
+                    <div class="card-footer">
+                      <a href="datos_paciente.html"><button class="btn btn-primary" type="button"onclick="reservarEspecialidad('Odontologia')">RESERVAR</button></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row mb-5">
+                <div class="col-md-6 col-sm-6 mb-3 d-flex justify-content-center align-content-center">
+                  <div class="card text-center w-75">
+                    <div class="card-body">
+                        <img src="img/kine.png" class="img-fluid" alt="">
+                      <h5 class="card-title fw-bold">KINESIOLOGIA</h5>
+                      <P class ="txt-white">Rehabilitación de lesiones y mejoramiento de la movilidad mediante terapias físicas y ejercicios específicos.</P>
+                    </div>
+                    <div class="card-footer">
+                      <a href="datos_paciente.html"><button class="btn btn-primary" type="button" onclick="reservarEspecialidad('Kinesiologia')">RESERVAR</button></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-sm-6 mb-3 d-flex justify-content-center align-content-center">
+                  <div class="card text-center w-75">
+                    <div class="card-body">
+                        <img src="img/ofta.png" class="img-fluid" alt="">
+                      <h5 class="card-title fw-bold">OFTALMOLOGIA</h5>
+                      <p class ="txt-white">Diagnóstico y tratamiento de condiciones oculares, desde problemas de visión hasta cirugías de cataratas.</p>
+                    </div>
+                    <div class="card-footer">
+                      <a href="datos_paciente.html"><button class="btn btn-primary" type="button" onclick="reservarEspecialidad('Oftalmologia')">RESERVAR</button></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row mb-5">
+                  <div class="col-md-6 col-sm-6 mb-3 d-flex justify-content-center align-content-center">
+                    <div class="card text-center w-75">
+                      <div class="card-body">
+                        <img src="img/muestra.ico" class="img-fluid" alt="">
+                        <h5 class="card-title fw-bold">TOMA DE MUESTRAS</h5>
+                        <p class ="txt-white"> Procedimiento para recolectar muestras biológicas como sangre, orina o tejido para análisis médicos.</p>
+                      </div>
+                      <div class="card-footer">
+                        <a href="datos_paciente.html"><button class="btn btn-primary" type="button" onclick="reservarEspecialidad('Toma de muestras')">RESERVAR</button></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-sm-6 mb-3 d-flex justify-content-center align-content-center">
+                    <div class="card text-center w-75">
+                      <div class="card-body">
+                        <img src="img/4706703 (1).ico" class="img-fluid" alt="">
+                        <h5 class="card-title fw-bold">RADIOGRAFIAS</h5>
+                        <p class ="txt-white">Imágenes médicas que utilizan rayos X para diagnosticar condiciones como fracturas óseas o enfermedades pulmonares.</p>
+                      </div>
+                      <div class="card-footer">
+                        <a href="datos_paciente.html"><button class="btn btn-primary" type="button" onclick="reservarEspecialidad('Radiografias')" >RESERVAR</button></a>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+              <div class="row mb-5">
+                  <div class="col-md-6 col-sm-6 mb-3 d-flex justify-content-center align-content-center">
+                    <div class="card text-center w-75">
+                      <div class="card-body">
+                        <img src="img/gine.ico" class="img-fluid" alt="">
+                        <h5 class="card-title fw-bold">GINECOLOGIA Y OBTRETICIA</h5>
+                        <p class ="txt-white">Atención médica enfocada en la salud reproductiva femenina, incluyendo control prenatal y manejo de condiciones ginecológicas.</p>
+                      </div>
+                      <div class="card-footer">
+                        <a href="datos_paciente.html"><button class="btn btn-primary" type="button" onclick="reservarEspecialidad('Ginecologia y obstetricia')">RESERVAR</button></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-sm-6 mb-3 d-flex justify-content-center align-content-center">
+                    <div class="card text-center w-75">
+                      <div class="card-body">
+                        <img src="img/pediatria.ico" class="img-fluid" alt="">
+                        <h5 class="card-title fw-bold">PEDIATRIA</h5>
+                        <p class ="txt-white">Cuidado médico especializado para niños, desde el nacimiento hasta la adolescencia, abordando desarrollo, enfermedades y vacunación.</p>
+                      </div>
+                      <div class="card-footer">
+                        <a href="datos_paciente.html"><button class="btn btn-primary" type="button" onclick="reservarEspecialidad('Pediatria')">RESERVAR</button></a>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+              <div class="row mb-5">
+                  <div class="col-md-6 col-sm-6 mb-3 d-flex justify-content-center align-content-center">
+                    <div class="card text-center w-75">
+                      <div class="card-body">
+                        <img src="img/trauma.ico" class="img-fluid" alt="">
+                        <h5 class="card-title fw-bold">TRAUMATOLOGIA</h5>
+                        <p class ="txt-white">Diagnóstico y tratamiento de lesiones musculoesqueléticas, desde esguinces hasta fracturas complejas.</p>
+                      </div>
+                      <div class="card-footer">
+                        <a href="datos_paciente.html"><button class="btn btn-primary" type="button" onclick="reservarEspecialidad('Traumatologia')">RESERVAR</button></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-sm-6 mb-3 d-flex justify-content-center align-content-center">
+                    <div class="card text-center w-75">
+                      <div class="card-body">
+                        <img src="img/derma.ico" class="img-fluid" alt="">
+                        <h5 class="card-title fw-bold">DERMATOLOGIA</h5>
+                        <p class ="txt-white">Especialidad médica centrada en el diagnóstico y tratamiento de enfermedades de la piel, cabello y uñas.</p>
+                      </div>
+                      <div class="card-footer">
+                        <a href="datos_paciente.html"><button class="btn btn-primary" type="button" onclick="reservarEspecialidad('Dermatologia')">RESERVAR</button></a>                   
+                      </div>
+                    </div>
+                  </div>
+              </div>                  
+        </section>        
+    </main>
+
+    <footer class="fooc mt-5">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-4 col-sm-12 colfoter p-5">
+            <h3>Enlaces</h3>
+            <ul>                   <!-- que no se te olvide el ul es lista desordenbada-->
+              <li><a class="txtfo" href="index.html">Inicio</a></li>
+              <li><a class="txtfo"  href="index.html">¿Quienes somos?</a></li>  <!-- li es elemento de lista-->
+              <li><a class="txtfo" href="contacto.html">Contacto</a></li>
+            </ul>
+          </div> 
+          <div class="col-md-4 col-sm-12 colfoter p-5">
+            <h3>Contacto</h3>
+            <p>Correo electronico: ClinicaPa@pacifico.cl</p>
+            <p>Telefono: 5566778899</p>
+          </div>
+          <div class="col-md-4 col-sm-12 colfoter p-5">
+            <h3>Derechos de autor</h3>
+            <p>Copyright ©℗®™ 2024 Sitio Web <br> Dary </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+}
+
+.invalid-feedback {
+    display: none;
+}
+
+.is-invalid + .invalid-feedback {
+    display: block;
+    color: red;
+}
+
+.is-invalid {
+    border-color: red;
+}
+
+.card-images {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.card-images img {
+    width: 50px;
+}
+.fooc .colfoter {
+    background-color: #018E97;
+    color: white;
+}
+
+.txtfo{
+    color: white;
+}
+
+.back {
+    background-color: #018E97;
+    color: white;
+    border-radius: 50px;
+}
+
+.btn-back{
+    background-color: #018e97;
+    border-color: #018e97;
+    color: white;
+    border-color: white;
+    width: 15rem;
+}
+.btn-back:hover{
+    background-color: white;
+    border-color: white;
+    color: #018e97;
+  }

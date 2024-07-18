@@ -1,0 +1,198 @@
+.calendario {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.wrapper {
+  background: #018e97;
+  border-radius: 10px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+  color: #fff;
+}
+
+.wrapper header {
+  display: flex;
+  align-items: center;
+  padding: 25px 30px 10px;
+  justify-content: space-between;
+}
+
+header .icons {
+  display: flex;
+}
+
+header .icons span {
+  height: 38px;
+  width: 38px;
+  margin: 0 1px;
+  cursor: pointer;
+  color: #878787;
+  text-align: center;
+  line-height: 38px;
+  font-size: 1.9rem;
+  user-select: none;
+  border-radius: 50%;
+}
+
+.icons span:last-child {
+  margin-right: -10px;
+}
+
+header .icons span:hover {
+  background: #f2f2f2;
+}
+
+header .current-date {
+  font-size: 1.80rem;
+  font-weight: 500;
+}
+
+.calendar {
+  padding: 20px;
+}
+
+.weeks {
+  display: flex; /* Cambiamos a flex */
+  justify-content: space-around;
+  list-style: none;
+  padding: 0;
+}
+
+.weekday {
+  flex: 1; /* Distribuir el espacio disponible */
+  color: #fff;
+  font-size: 1.15rem;
+  cursor: default;
+  padding: 10px;
+  text-align: center; /* Centrar el contenido */
+}
+
+.calendar .days {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr); /* Esto crea 7 columnas de igual ancho */
+  list-style: none;
+  padding: 0;
+  gap: 5px; /* Espacio entre los elementos */
+}
+
+.calendar .days li {
+  color: #fff;
+  font-size: 1.30rem;
+  cursor: pointer;
+  padding: 10px;
+  text-align: center; /* Centrar el contenido */
+}
+
+.calendar .days li.inactive {
+  color: #aaa;
+}
+
+/* Ajuste para el efecto hover en los días del calendario */
+.calendar .days li:not(.inactive):hover {
+  background: #fff; /* Cambia el fondo en hover */
+  color: #018e97; /* Cambia el color del texto en hover */
+  border-radius: 15px;
+}
+
+.calendar .days li.active {
+  background-color: #fff; /* Color de fondo para días activos */
+  border-radius: 15px;
+  color: #018e97;
+}
+
+.calendar .days li:not(.inactive):hover::before {
+  background: #f2f2f2;
+}
+
+.hours {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns grid */
+  gap: 10px; /* Space between the hour slots */
+  padding: 20px;
+}
+
+.hour-slot {
+  background: #018e97; /* Background color for hour slots */
+  color: #fff; /* White text color */
+  padding: 15px;
+  text-align: center;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s, color 0.3s;
+  font-size: 1.2rem; /* Larger font size */
+}
+
+.hour-slot.active {
+  background-color: #fff; /* Background color when active */
+  color: #018e97; /* Text color when active */
+}
+
+.hour-slot:hover {
+  background: #fff; /* Background color on hover */
+  color: #018e97; /* Text color on hover */
+}
+
+.btn-back{
+  background-color: #018e97;
+  border-color: #018e97;
+  color: white;
+  border-color: white;
+  width: 15rem;
+}
+.btn-back:hover{
+  background-color: white;
+  border-color: white;
+  color: #018e97;
+}
+.btn-back1{
+  background-color: #018e97;
+  border-color: #018e97;
+  color: white;
+  border-color: white;
+  width: 10rem;
+}
+.btn-back1:hover{
+  background-color: white;
+  border-color: white;
+  color: #018e97;
+}
+.fondo-img {
+  background-image: url(../img/mision-y-vision-web-1400x400.jpg);
+  background-position: center;
+  background-size: cover;
+  /*ajusta el tamaño de la imagen al cuadrado*/
+  width: 100%;
+}
+
+.fondo-color {
+  background-color: #018e97;
+}
+
+.fooc .colfoter {
+  background-color: #018e97;
+  color: white;
+}
+
+.txtfo {
+  color: white;
+}
+
+.table th {
+  background-color: #018e97;
+  color: #fff;
+  font-size: 1rem;
+}
+
+.table td {
+  font-size: 0.9rem;
+}
+.inactive {
+  background-color: #d3d3d3; /* Cambia el color de fondo para que se vea como inactiva */
+  color: #a9a9a9; /* Cambia el color del texto */
+  border-radius: 10px;
+  cursor: not-allowed; /* Cambia el cursor para que no se pueda hacer clic */
+}
+
+

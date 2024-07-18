@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOGIN ADM</title>
+    <!-- ICONS -->
+    <link rel="shortcut icon" href="img/logore.ico" type="image/x-icon">
+    <!-- GOOGLE FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- BOOTSTRAP-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- CSS-->
+    <link rel="stylesheet" href="css/loginadm.css">
+    <!-- JQUERY-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.min.js"></script> <!-- Validate -->
+    <!-- JAVASCRIPT-->
+    <script src="js/loginadm.js"></script>
+</head>
+<body>
+
+    <main class="container-fluid p-5 text-center">
+        <section>
+            <img src="img/logore.ico" alt="icono-clinica" class="img-fluid mb-3" width="50px">
+            <h1>LOGIN ADMIN</h1>
+            <form id="FormLogin">
+                <div class="mb-3">
+                    <label for="usu" class="form-label color-lbl">NOMBRE USUARIO</label>
+                    <input type="text" class="form-control mx-auto inputs" id="FormUsu" name="FormUsu" placeholder="INGRESE SU USUARIO" required>
+                </div>
+                <div class="mb-3">
+                    <label for="Contrasena" class="form-label color-lbl">CONTRASEÑA</label>
+                    <input type="password" class="form-control mx-auto inputs" id="FormContra" name="FormContra" placeholder="INGRESE SU CONTRASEÑA" required>
+                </div>
+                <div class="mb-3">
+                    <button type="submit" class="btn btn-ini fw-bold mt-3">INICIAR SESION</button>
+                </div>
+            </form>
+        </section>
+    </main>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

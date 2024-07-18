@@ -1,0 +1,134 @@
+body{
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+}
+#anular-hora{
+    text-decoration: none;
+    color: black;
+    background-color: #DD9999;
+    text-align: center;
+    font-size: 30px;
+    padding: 20px;
+    border: 2px solid black;
+    font-weight: bold;
+}
+#contacto{
+    text-decoration: none;
+    color: black;
+    background-color: #99D9DD;
+    text-align: center;
+    font-size: 30px;
+    padding: 20px;
+    border: 2px solid black;
+    font-weight: bold;
+}
+#agendar-hora{
+    text-decoration: none;
+    color: black;
+    background-color: #018E97;
+    text-align: center;
+    font-size: 30px;
+    padding: 20px;
+    border: 2px solid black;
+    font-weight: bold;
+}
+#buscar-hora{
+    text-decoration: none;
+    color: black;
+    background-color: #99C4DD;
+    font-size: 30px;
+    text-align: center;
+    padding: 20px;
+    border: 2px solid black;
+    font-weight: bold;
+}
+
+
+
+/* CSS HEADER Y PAGINA PRINCILPA*/
+.txt-nav{
+    text-decoration: none;
+    color: black;
+    margin: auto;
+    
+    
+}
+.img-nav{
+    background-image: url(../img/banner-nav.png);
+    background-position: center;
+    background-size: cover; /*ajusta el tamaño de la imagen al cuadrado*/
+    padding: 200px;
+    width: 100%;
+}
+.card-title.slogan{
+    font-size: 40px;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    font-weight: bold;
+}
+.card-body.slogan{
+
+    color: black;
+    text-align: center;
+    font-size: 30px;
+    width: 26rem;
+    height: 10rem;
+    float: inline-end; /*tirarlo para la derecha */
+    margin-top: -100px;
+    margin-right: -100px;
+
+}
+
+
+/*MAIN MAS BUSCADO*/
+
+#masbuscado{
+    text-align: center;
+    margin-top: 30px;
+    color: #006A71;
+}
+#btn-ver{
+    background-color: #99D9DD;
+    font-weight: bold;
+    margin-top: 5rem;
+    
+}
+#fondo-back{
+    background-color: #006A71;
+}
+
+.img-centro{
+    display: flex;       /*CENTRA LA IMAGEN SIEMPRE USA DISPLAY FLEX Y MARGIN AUTO*/
+    margin: auto;
+    margin-bottom: 20px;
+}
+.color-texto,.space{
+    color: #018E97;
+    margin-top: 60px;
+    margin-bottom: 40px;
+    text-align: center;
+    font-size: 50px;
+}
+.card-text{
+    font-size: 25px;
+}
+.color-text{
+    color: #018E97;
+}
+
+.btn.buttoncard{
+    background-color: #018E97;
+    border-color: #018E97;
+}
+
+/* footer*/
+
+.fooc .colfoter {
+    background-color: #018E97;
+    color: white;
+}
+
+.txtfo{
+    color: white;
+}

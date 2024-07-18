@@ -1,0 +1,53 @@
+body{
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+/* CSS HEADER Y NAV*/
+.img-nav{
+    background-image: url(../img/doctor-computador-batafreepik.jpg);
+    background-position: center;
+    background-size: cover;
+    padding: 150px;
+    width: 100%;
+}
+.card-body{
+    background-color: #018E97;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    width: 26rem;
+    height: 10rem;
+}
+.card-title{
+    font-size: 30px;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+
+/*CONTENEDOR FORM*/
+
+.fondo-bg{
+    background-color: #018E97;
+}
+
+.btn.btn-primary{
+    background-color: white;
+    color: #018E97;
+    border-color: white;
+}
+
+
+/*FOOTER PIE DE PAFINA*/
+
+
+.fooc .colfoter {
+    background-color: #018E97;
+    color: white;
+}
+
+.txtfo{
+    color: white;
+}
+

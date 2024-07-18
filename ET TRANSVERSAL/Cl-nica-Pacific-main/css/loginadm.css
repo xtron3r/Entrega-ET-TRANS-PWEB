@@ -1,0 +1,38 @@
+body{
+    margin: 0;
+    background-repeat: no-repeat;
+    font-family: "Montserrat", sans-serif;
+    background-image: linear-gradient(to bottom, white, #018E97);
+    height: 100vh;
+}
+
+section {
+    margin-top: 10rem;
+}
+
+h1{
+    color: black;
+    font-weight: bold;
+}
+
+.color-lbl{
+    color: black;
+    margin-top: 20px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.inputs{
+    width: 20rem;
+}
+
+.btn-ini{
+    background-color: #02676e;
+    border-color: #02676e;
+    color: white;
+}
+.btn-ini:hover{
+    background-color: white;
+    border-color: white;
+    color: #02676e;
+}
